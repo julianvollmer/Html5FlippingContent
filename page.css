@@ -1,111 +1,40 @@
 #content {
-	-moz-column-count: 3; 
-	-moz-column-gap: 1em; 
-	-moz-column-rule: 1px solid black; 
-	-webkit-column-count: 3; 
-	-webkit-column-gap: 1em; 
-	-webkit-column-rule: 1px solid black;
-	min-height: 100%; /* Mindesthöhe für moderne Browser */
-	height:90% !important; /* Important Regel für moderne Browser */ 
-	height:90%; /* Mindesthöhe für den IE */ 
-	/*-webkit-animation: fontbulger 2s ;*/
-
+	background-color:#11f;
+	width: 960px;
+	height:80%;
+	text-align:center;
+	margin:auto;
 }
 
-#content:hover
+.contentAnimated {
+	background-color:#11f; 
+	width: 960px;
+	height: 80%;
+	text-align:center;
+	margin:auto;
+	animation: myfirst 5s;
+	-moz-animation: myfirst 5s; /* Firefox */
+	-webkit-animation: myfirst 5s; /* Safari and Chrome */	
+}
+
+
+@-webkit-keyframes myfirst /* Safari and Chrome */
 {
-animation-timing-function:linear;
--moz-animation-timing-function:linear; /* Firefox */
--webkit-animation-timing-function:linear; /* Safari and Chrome */
-	-webkit-animation-fill-mode: forwards;
-	-webkit-animation-play-state: paused;
-	animation:moveContent 100s;
-	-moz-animation:moveContent 100s; /* Firefox */
-	-webkit-animation:moveContent 100s; /* Safari and Chrome */
+from {
+		-webkit-transform: perspective(0px) translate3d(0%,0px,0px ) rotateY(0deg);	
+	}
+to {
+		-webkit-transform: perspective(1000px) translate3d(-60%,0px,0px ) rotateY(-90deg);	
+		opacity:0.1;
+	}
 }
-#content:active {
-animation-timing-function:linear;
--moz-animation-timing-function:linear; /* Firefox */
--webkit-animation-timing-function:linear; /* Safari and Chrome */
-	-webkit-animation-fill-mode: forwards;
-	-webkit-animation-play-state: running;
-	animation:moveContent 100s;
-	-moz-animation:moveContent 100s; /* Firefox */
-	-webkit-animation:moveContent 100s; /* Safari and Chrome */
-}
-
-@-webkit-keyframes moveContent {
-	from {
-		transform: translate(0px,0px);
-		-ms-transform: translate(0px,0px);
-		-webkit-transform: translate(0px,0px);
-		-o-transform: translate(0px,0px);
-		-moz-transform: translate(0px,0px);
-		}
-	to {
-		transform: translate(-50000px,0px);
-		-ms-transform: translate(-50000px,0px);
-		-webkit-transform: translate(-50000px,0px);
-		-o-transform: translate(-50000px,0px);
-		-moz-transform: translate(-50000px,0px);
-		}
-}	
-
-
-@-moz-keyframes moveContent /* Firefox */
-{
-0%  	{ 	-moz-transform:scale(0.9);
-			-webkit-transform:scale(0.9);
-		}
-25%  	{ 	-moz-transform:scale(1.2);
-			-webkit-transform:scale(1.2);
-		}
-75%  	{ 	-moz-transform:scale(0.9);
-			-webkit-transform:scale(0.9);
-		}
-}	
-
-@keyframes moveContent {
-0%  	{ 	-moz-transform:scale(0.9);
-			-webkit-transform:scale(0.9);
-		}
-25%  	{ 	-moz-transform:scale(1.2);
-			-webkit-transform:scale(1.2);
-		}
-75%  	{ 	-moz-transform:scale(0.9);
-			-webkit-transform:scale(0.9);
-		}
-}	
-
 
 html, body { 
 	background-color: #caf;
 	margin: 0;
 	padding: 0;
-	height: 90%; /* WICHTIG!!! STRECKT ANZEIGENBEREICH AUF 90% */
-	
+	height:100%;
 }
-
-
-#firstdiv {
-	position:absolute;
-	left:166.6%;
-	width:1px;
-	background-color:yellow;
-}
-
-@-webkit-keyframes fontbulger {
-	0% {
-		font-size: 10px;
-	}
-	30% {
-		font-size: 15px;
-	}
-	100% {
-		font-size: 12px;
-	}
-}
-
 
 #lala {
 	width:100%;
@@ -114,7 +43,7 @@ html, body {
 	width:50%;	
 }
 footer {
-	position:fixed;
+position:fixed;
 	width:100%;
 }
 #buttonsstyle {
@@ -154,18 +83,18 @@ footer {
 {
 	-webkit-animation-fill-mode: forwards;
 	-webkit-animation-play-state: paused;
-	animation:moveContent 5s;
-	-moz-animation:moveContent 5s; /* Firefox */
-	-webkit-animation:moveContent 5s; /* Safari and Chrome */
+	animation:moveContent 1s;
+	-moz-animation:moveContent 1s; /* Firefox */
+	-webkit-animation:moveContent 1s; /* Safari and Chrome */
 }
 #buttonsstyle:active {
 	-webkit-animation-fill-mode: forwards;
 	-webkit-animation-play-state: running;
-	animation:moveContent 5s;
-	-moz-animation:moveContent 5s; /* Firefox */
-	-webkit-animation:moveContent 5s; /* Safari and Chrome */
+	animation:moveContent 1s;
+	-moz-animation:moveContent 1s; /* Firefox */
+	-webkit-animation:moveContent 1s; /* Safari and Chrome */
 }
-@-webkit-keyframes mymove {
+@-webkit-keyframes moveContent {
 0%  	{ 	-moz-transform:scale(0.9);
 			-webkit-transform:scale(0.9);
 		}
@@ -175,10 +104,10 @@ footer {
 75%  	{ 	-moz-transform:scale(0.9);
 			-webkit-transform:scale(0.9);
 		}
-}	
+}
 
 
-@-moz-keyframes mymove /* Firefox */
+@-moz-keyframes moveContent /* Firefox */
 {
 0%  	{ 	-moz-transform:scale(0.9);
 			-webkit-transform:scale(0.9);
@@ -191,7 +120,7 @@ footer {
 		}
 }	
 
-@keyframes mymove {
+@keyframes moveContent {
 0%  	{ 	-moz-transform:scale(0.9);
 			-webkit-transform:scale(0.9);
 		}
@@ -201,4 +130,4 @@ footer {
 75%  	{ 	-moz-transform:scale(0.9);
 			-webkit-transform:scale(0.9);
 		}
-}	
+}
