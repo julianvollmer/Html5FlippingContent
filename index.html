@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 	<head>
-	<link rel="stylesheet" type="text/css" href="page_handheld.css" media="handheld" />
+        </head>
 	<link rel="stylesheet" type="text/css" href="page.css" media="screen" />
 		<body>
-			<div id="content">					
+			
+
+                        
+                    <div class="content" name="test">
+                            <article>
 					<h1>Hallo wie gehts</h1>
 					<p>	
 						Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.   
@@ -15,7 +19,10 @@
 					</p>
 				</article>
 			</div>
-			<footer>
+                    
+                    <input type="button" value="vor" onclick="next()"/>
+                    
+                    <!--	<footer>
 				<hr>
 				<table id="lala">
 					<tr>
@@ -27,12 +34,12 @@
 						</td>
 					</tr>
 				</table>
-			</footer>
+			</footer> -->
+                    
 			<script type="text/javascript">
 			function next () {
-			  	document.getElementById('content').className = 'content contentAnimated';
+			  	document.getElementsByName('test')[0].className = 'content contentAnimated';
 			}
  </script>
 		</body>
-	</head>
 </html>
