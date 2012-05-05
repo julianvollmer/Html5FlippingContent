@@ -2,21 +2,33 @@
 	background-color:#eee;
 	width: 960px;
 	height: 80%;
-        opacity: 1;
 	text-align:center;
 	margin:auto;
-        -webkit-animation-fill-mode: forwards;
-        position: fixed;    
+        position: absolute;
         top: 50%;
         left: 5%;
         bottom: 50%;
         right: 5%; 
-         
 }
+.content2 {
+	background-color:#eee;
+	width: 960px;
+	height: 80%;
+	text-align:center;
+	margin:auto;
+        position: absolute;
+        top: 50%;
+        left: 5%;
+        bottom: 50%;
+        right: 5%; 
+}
+
+
 
 .contentAnimated {
 
-	-webkit-animation: myfirst 5s; /* Safari and Chrome */	
+	-webkit-animation: myfirst 1s; /* Safari and Chrome */	
+         -webkit-animation-fill-mode: forwards;
 }
 
 

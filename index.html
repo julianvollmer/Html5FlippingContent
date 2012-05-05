@@ -1,45 +1,47 @@
 <!DOCTYPE html>
-	<head>
-        </head>
-	<link rel="stylesheet" type="text/css" href="page.css" media="screen" />
-		<body>
-			
+    <head>
+        <link rel="stylesheet" type="text/css" href="page.css" media="screen"/>
+    </head>
+    <body>		
+        <div class="content2" name="test">
+                <article>
+                    <h1>Hallo wiee gehts</h1>
+                    <p>
+                        Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.   
+                        Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.   
+                        At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+                    </p>
+            </article>
+        </div>
+        <div class="content" name="test">
+                <article>
+                    <h1>Hallosss wiee gehts</h1>
+                    <p>
+                        Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.   
+                        Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.   
+                        At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+                    </p>
+            </article>
+        </div>    
+        <input type="button" value="vor" onclick="next()"/>
 
-                        
-                    <div class="content" name="test">
-                            <article>
-					<h1>Hallo wie gehts</h1>
-					<p>	
-						Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.   
-						Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.   
-						Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.   
-						Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.   
-						Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.   
-						At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
-					</p>
-				</article>
-			</div>
-                    
-                    <input type="button" value="vor" onclick="next()"/>
-                    
-                    <!--	<footer>
-				<hr>
-				<table id="lala">
-					<tr>
-						<td>
-							<input type="button" value="vor" id="buttonsstyle" onclick="next()"/>
-						</td>
-						<td>
-							<input type="button" value="zur&uuml;ck" id="buttonsstyle"  onclick="next()"/>
-						</td>
-					</tr>
-				</table>
-			</footer> -->
-                    
-			<script type="text/javascript">
-			function next () {
-			  	document.getElementsByName('test')[0].className = 'content contentAnimated';
-			}
- </script>
-		</body>
+                <!--	<footer>
+                            <hr>
+                            <table id="lala">
+                                    <tr>
+                                            <td>
+                                                    <input type="button" value="vor" id="buttonsstyle" onclick="next()"/>
+                                            </td>
+                                            <td>
+                                                    <input type="button" value="zur&uuml;ck" id="buttonsstyle"  onclick="next()"/>
+                                            </td>
+                                    </tr>
+                            </table>
+                    </footer> -->                    
+    <script type="text/javascript">
+        function next () {
+            document.getElementsByName('test')[1].className = 'content contentAnimated';
+        }
+    </script>
+    </body>
 </html>
