@@ -2,10 +2,10 @@
     <head>
         <link rel="stylesheet" type="text/css" href="page.css" media="screen"/>
     </head>
-    <body>		
-        <div class="content2" name="test">
+    <body>	
+        <div class="content" name="test">
                 <article>
-                    <h1>Hallo wiee gehts</h1>
+                    <h1>1Hallosss wiee gehts</h1>
                     <p>
                         Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.   
                         Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.   
@@ -15,16 +15,36 @@
         </div>
         <div class="content" name="test">
                 <article>
-                    <h1>Hallosss wiee gehts</h1>
+                    <h1>2Hallosss wiee gehts</h1>
                     <p>
                         Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.   
                         Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.   
                         At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
                     </p>
             </article>
-        </div>    
+        </div>
+        <div class="content" name="test">
+                <article>
+                    <h1>3Hallosss wiee gehts</h1>
+                    <p>
+                        Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.   
+                        Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.   
+                        At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+                    </p>
+            </article>
+        </div>
+        <div class="content" name="test">
+                <article>
+                    <h1>4Hallosss wiee gehts</h1>
+                    <p>
+                        Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.   
+                        Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.   
+                        At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+                    </p>
+            </article>
+        </div>
+        <input type="button" value="zurueck" onclick="back()"/>
         <input type="button" value="vor" onclick="next()"/>
-
                 <!--	<footer>
                             <hr>
                             <table id="lala">
@@ -39,8 +59,18 @@
                             </table>
                     </footer> -->                    
     <script type="text/javascript">
+        var count = 3;
         function next () {
-            document.getElementsByName('test')[1].className = 'content contentAnimated';
+            document.getElementsByName('test')[count].className = 'content contentAnimated';
+			count--;
+            
+        }
+        
+        function back () {
+            count++;
+            document.getElementsByName('test')[count].className = 'content contentAnimatedBack';
+            
+            
         }
     </script>
     </body>

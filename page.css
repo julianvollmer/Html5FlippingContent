@@ -30,6 +30,10 @@
 	-webkit-animation: myfirst 1s; /* Safari and Chrome */	
          -webkit-animation-fill-mode: forwards;
 }
+.contentAnimatedBack {
+	-webkit-animation: myfirst2 1s; /* Safari and Chrome */	
+         -webkit-animation-fill-mode: forwards;
+}
 
 
 @-webkit-keyframes myfirst /* Safari and Chrome */
@@ -39,9 +43,21 @@ from {
 	}
 to {
 		
-                opacity:0.1;
+                opacity:0;
 	}
 }
+
+@-webkit-keyframes myfirst2 /* Safari and Chrome */
+{
+from {
+		opacity:0;
+	}
+to {
+		
+                opacity:1;
+	}
+}
+
 
 html, body { 
 	background-color: #caf;
